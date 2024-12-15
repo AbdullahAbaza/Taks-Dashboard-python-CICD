@@ -2,18 +2,18 @@ pipeline {
     agent any
     environment {
 
-        DOCKER_IMAGE = "aliayman225/task-manager"
+        DOCKER_IMAGE = "abdullahabaza/task-manager"
         //VERSION = "${env.BUILD_NUMBER}"
-	ARGOCD_SERVER = 'localhost:8082'
+	    ARGOCD_SERVER = 'localhost:8082'
         ARGOCD_USER = 'admin'
-        ARGOCD_PASSWORD = 'blxCMgUErLrfUjNN'
-        ARGOCD_APP_NAME = 'task-manager'
+        ARGOCD_PASSWORD = 'Q2feDsWxNgHZvZeQ'
+        ARGOCD_APP_NAME = 'task-manager-cicd'
     }
 
     stages {
         stage('Clone') {
             steps {
-                git branch: 'main', url: 'https://github.com/aliayman-225/Taks-Dashboard-python-CICD'
+                git branch: 'main', url: 'https://github.com/AbdullahAbaza/Taks-Dashboard-python-CICD.git'
             }
         }
 

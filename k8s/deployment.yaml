@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: task-manager
-          image: "aliayman225/task-manager:latest"
+          image: "abdullahabaza/task-manager:latest"
           ports:
             - containerPort: 5000
           env:
