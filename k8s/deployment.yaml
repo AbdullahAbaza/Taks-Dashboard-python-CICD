@@ -22,3 +22,10 @@ spec:
           env:
             - name: FLASK_ENV
               value: "production"
+          resources:
+            requests:
+              memory: "256Mi"
+              cpu: "500m"
+            limits:
+              memory: "512Mi"
+              cpu: "1"

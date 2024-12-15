@@ -11,7 +11,7 @@ with app.app_context():
 
 @app.route('/')
 def index():
-    return render_template('./templates/index.html')
+    return render_template('index.html')
 
 @app.route('/tasks', methods=['GET', 'POST'])
 def manage_tasks():
