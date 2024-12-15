@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request, jsonify
 from models import db, Task
 
-app = Flask(__name__)
+app = Flask(__name__, template_folder='./templates')
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///tasks.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db.init_app(app)
